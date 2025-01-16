@@ -1,8 +1,12 @@
 package dis.ufv.Peliculas.peliculasAPI;
 
+import org.springframework.stereotype.Service;
+
 import java.io.*;
 import java.util.ArrayList;
-
+/* ---- AÑADIDO FRONT ----*/
+@Service
+/* ---------------------- */
 public class LectorCSV {
 
     public ArrayList<Pelicula> leerCSV() {
