@@ -11,7 +11,7 @@ import java.util.ArrayList;
 @RestController
 public class PeliculaController {
 
-    @GetMapping("")
+    @GetMapping("/peliculas")
     public ArrayList<Pelicula> peliculas(){
         ArrayList<Pelicula> listaPeliculas = new LectorCSV().leerCSV();
         return listaPeliculas;
