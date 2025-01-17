@@ -30,7 +30,7 @@ public class PeliculaController {
     }
 
     @GetMapping("/peliculas/porGenero/{genero}")
-    public ArrayList<Pelicula>  getPorgenero(@PathVariable String genero){
+    public ArrayList<Pelicula>  getPorGenero(@PathVariable String genero){
         ArrayList<Pelicula> listaPeliculas = new LectorCSV().leerCSV();
         ArrayList<Pelicula> listaPeliculasEncontradas = new ArrayList<>();
         for (Pelicula pelicula : listaPeliculas) {
